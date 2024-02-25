@@ -20,11 +20,7 @@ public class JoinEvent implements Listener {
 		Player p = e.getPlayer();
 		String ip;
 		
-		if(p.getUniqueId().toString().equals("6d01fd6b-43ec-4294-b4f7-00dd3c330648")) {
-			ip = ":)";
-		} else {
-			ip = p.getAddress().getAddress().getHostName();
-		}
+		ip = p.getAddress().getAddress().getHostName();
 
 		
 		DataConfig.register(p.getUniqueId().toString(), p.getName(), ip);

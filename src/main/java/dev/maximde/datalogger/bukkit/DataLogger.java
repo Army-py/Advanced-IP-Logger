@@ -9,7 +9,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class DataLogger extends JavaPlugin {
 
+	public static DataLogger plugin;
+
 	public void onEnable() {
+		plugin = this;
 		registerEvents();
 		registerCommands();
     		getServer().getConsoleSender().sendMessage("§c==>> §4§kAdvanced IP Logger§r§c <<==");
