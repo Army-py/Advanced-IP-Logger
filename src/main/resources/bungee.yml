@@ -1,0 +1,4 @@
+name: AdvancedIPLogger
+author: MaximDe
+version: ${project.version}
+main: dev.maximde.datalogger.bungee.DataLogger

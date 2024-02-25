@@ -1,0 +1,9 @@
+name: AdvancedIPLogger
+author: MaximDe
+version: ${project.version}
+main: dev.maximde.datalogger.bukkit.DataLogger
+api-version: "1.16"
+
+commands:
+   getdata:
+   getalts:
