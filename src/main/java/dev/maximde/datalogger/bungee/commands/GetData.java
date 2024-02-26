@@ -28,41 +28,41 @@ public class GetData extends Command {
 				ProxiedPlayer t = ProxyServer.getInstance().getPlayer(args[0]);
 				BungeecordOfflinePlayer ot = new BungeecordOfflinePlayer(args[0]);
 				if(!DataConfig.isRegistered(ot.getUniqueId().toString())) {
-					p.sendMessage("§cPlayer not found!");
+					p.sendMessage("Â§cPlayer not found!");
 					return;
 				}
-				p.sendMessage("§b§l---"+ot.getName()+"`s Data ---");
-				p.sendMessage("§6IP: §7" + DataConfig.getIP(ot.getUniqueId().toString()));
-				p.sendMessage("§6Port: §7" + DataConfig.getPort(ot.getUniqueId().toString()));
-				p.sendMessage("§6Last Time Played: §7" + DataConfig.getLastPlayedDate(ot.getUniqueId().toString()));
-				p.sendMessage("§6Country: §7" + IPManager.getCountry(DataConfig.getIP(ot.getUniqueId().toString())));
-				p.sendMessage("§6Region: §7" + IPManager.getRegion(DataConfig.getIP(ot.getUniqueId().toString())));
-				p.sendMessage("§6City: §7" + IPManager.getCity(DataConfig.getIP(ot.getUniqueId().toString())));
-				p.sendMessage("§b§l----------------------");
+				p.sendMessage("Â§bÂ§l---"+ot.getName()+"`s Data ---");
+				p.sendMessage("Â§6IP: Â§7" + DataConfig.getIP(ot.getUniqueId().toString()));
+				p.sendMessage("Â§6Port: Â§7" + DataConfig.getPort(ot.getUniqueId().toString()));
+				p.sendMessage("Â§6Last Time Played: Â§7" + DataConfig.getLastPlayedDate(ot.getUniqueId().toString()));
+				p.sendMessage("Â§6Country: Â§7" + IPManager.getCountry(DataConfig.getIP(ot.getUniqueId().toString())));
+				p.sendMessage("Â§6Region: Â§7" + IPManager.getRegion(DataConfig.getIP(ot.getUniqueId().toString())));
+				p.sendMessage("Â§6City: Â§7" + IPManager.getCity(DataConfig.getIP(ot.getUniqueId().toString())));
+				p.sendMessage("Â§bÂ§l----------------------");
 			} else {
-				p.sendMessage("§c/getdata <playername>");
+				p.sendMessage("Â§c/getdata <playername>");
 			}
 			} else {
-				p.sendMessage("§cNo permissions!");
+				p.sendMessage("Â§cNo permissions!");
 			}
 		} else {
 			if(args.length == 1) {
 				ProxiedPlayer t = ProxyServer.getInstance().getPlayer(args[0]);
 				BungeecordOfflinePlayer ot = new BungeecordOfflinePlayer(args[0]);
 				if(!DataConfig.isRegistered(ot.getUniqueId().toString())) {
-					DataLogger.getConsole().sendMessage("§cPlayer not found!");
+					DataLogger.getConsole().sendMessage("Â§cPlayer not found!");
 					return;
 				}
-				DataLogger.getConsole().sendMessage("§b§l---"+ot.getName()+"`s Data ---");
-				DataLogger.getConsole().sendMessage("§6IP: §7" + DataConfig.getIP(ot.getUniqueId().toString()));
-				DataLogger.getConsole().sendMessage("§6Port: §7" + DataConfig.getPort(ot.getUniqueId().toString()));
-				DataLogger.getConsole().sendMessage("§6Last Time Played: §7" + DataConfig.getLastPlayedDate(ot.getUniqueId().toString()));
-				DataLogger.getConsole().sendMessage("§6Country: §7" + IPManager.getCountry(DataConfig.getIP(ot.getUniqueId().toString())));
-				DataLogger.getConsole().sendMessage("§6Region: §7" + IPManager.getRegion(DataConfig.getIP(ot.getUniqueId().toString())));
-				DataLogger.getConsole().sendMessage("§6City: §7" + IPManager.getCity(DataConfig.getIP(ot.getUniqueId().toString())));
-				DataLogger.getConsole().sendMessage("§b§l----------------------");
+				DataLogger.getConsole().sendMessage("Â§bÂ§l---"+ot.getName()+"`s Data ---");
+				DataLogger.getConsole().sendMessage("Â§6IP: Â§7" + DataConfig.getIP(ot.getUniqueId().toString()));
+				DataLogger.getConsole().sendMessage("Â§6Port: Â§7" + DataConfig.getPort(ot.getUniqueId().toString()));
+				DataLogger.getConsole().sendMessage("Â§6Last Time Played: Â§7" + DataConfig.getLastPlayedDate(ot.getUniqueId().toString()));
+				DataLogger.getConsole().sendMessage("Â§6Country: Â§7" + IPManager.getCountry(DataConfig.getIP(ot.getUniqueId().toString())));
+				DataLogger.getConsole().sendMessage("Â§6Region: Â§7" + IPManager.getRegion(DataConfig.getIP(ot.getUniqueId().toString())));
+				DataLogger.getConsole().sendMessage("Â§6City: Â§7" + IPManager.getCity(DataConfig.getIP(ot.getUniqueId().toString())));
+				DataLogger.getConsole().sendMessage("Â§bÂ§l----------------------");
 			} else {
-				DataLogger.getConsole().sendMessage("§cgetdata <playername>");
+				DataLogger.getConsole().sendMessage("Â§cgetdata <playername>");
 			}
 		}
 		
