@@ -63,6 +63,14 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/army-py/Advanced-IP-Logger</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <resources>
             <resource>
